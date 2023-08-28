@@ -208,17 +208,18 @@ a {
     border: 5px solid var(--blue);
     overflow: hidden; /* Para ocultar el contenido que se extiende más allá del ancho original */
     transform-origin: right; /* Establecer el punto de origen en el lado derecho */
-    transition: all 0.2s ease-in;
+    transition: all 0.5s ease-in;
     background-color: var(--white);
     min-height: 600px;
     max-height: 600px;
 }
 
 .slide h6 {
-    margin-top: 100px; /*Aqui le sumaria 50*/
+    margin-top: 100px;
     margin-left: 20px;
     margin-right: 20px;
-    min-height: 260px; /*Aqui le restaria 50*/
+    min-height: 260px;
+    transition: transform 0.8s ease;
 }
 
 .slide h2 {
@@ -233,8 +234,9 @@ a {
 }
 
 .slide:hover h6 {
-    font-size: 70px!important;
+    transform: scale(2);
     min-height: 200px;
+    padding-top: 50px;
 }
 
 .slide:hover h2 {
@@ -266,7 +268,6 @@ a {
     margin-left: -70vw; /* Aplicar margen negativo para mantener el centro del contenido */
     z-index: 12;
 }
-
 
 
 
