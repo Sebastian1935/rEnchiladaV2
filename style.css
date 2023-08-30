@@ -9,6 +9,7 @@
     --red: #EF1043;
     --yellow: #F9C80B;
     --blue: #0C56B9;
+    --orange: #FFA500;
 }
 
 body {
@@ -452,6 +453,28 @@ a {
     position: absolute;
     left: -28%;
     top: 5%;
+}
+
+/* --- Septima seccion --- */
+#Septima-seccion {
+    height: 60vh;
+    padding: 0 8%;
+}
+
+#Septima-seccion h4 {
+    font-size: 3.5rem;
+}
+
+#Septima-seccion p, #Septima-seccion a {
+    font-size: 2rem;
+}
+
+#Septima-seccion a {
+    font-weight: 400;
+}
+
+.orange {
+    color: var(--orange);
 }
 
 
