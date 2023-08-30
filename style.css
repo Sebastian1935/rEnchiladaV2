@@ -123,12 +123,29 @@ a {
 }
 
 .mouse {
-    transform: translate(0px, -100px);
+    position: relative;
+    animation: mover 2s ease-in-out 4;
+    transform: translateY(-100px);
+    cursor: default;
 }
 
 .mouse p {
     margin: 0 !important;
     font-weight: 500;
+}
+
+@keyframes mover {
+
+    0%,
+    100% {
+        transform: translateY(-100px);
+        /* Estado inicial y final: sin traslación vertical */
+    }
+
+    50% {
+        transform: translateY(-120px);
+        /* Traslación hacia arriba en la mitad de la animación */
+    }
 }
 
 .hover-underline-animation {
@@ -207,8 +224,10 @@ a {
     flex-direction: column;
     align-items: center;
     border: 5px solid var(--blue);
-    overflow: hidden; /* Para ocultar el contenido que se extiende más allá del ancho original */
-    transform-origin: right; /* Establecer el punto de origen en el lado derecho */
+    overflow: hidden;
+    /* Para ocultar el contenido que se extiende más allá del ancho original */
+    transform-origin: right;
+    /* Establecer el punto de origen en el lado derecho */
     transition: all 0.5s ease-in;
     background-color: var(--white);
     min-height: 600px;
@@ -220,7 +239,7 @@ a {
     margin-left: 20px;
     margin-right: 20px;
     min-height: 260px;
-    transition: transform 0.8s ease;
+    transition: all 0.8s ease;
 }
 
 .slide h2 {
@@ -254,19 +273,25 @@ a {
 }
 
 .slide-1:hover {
-    width: calc(30% + 40vw); /* Incrementar el ancho original */
-    margin-left: -40vw; /* Aplicar margen negativo para mantener el centro del contenido */
+    width: calc(30% + 40vw);
+    /* Incrementar el ancho original */
+    margin-left: -40vw;
+    /* Aplicar margen negativo para mantener el centro del contenido */
 }
 
 .slide-2:hover {
-    width: calc(30% + 55vw); /* Incrementar el ancho original */
-    margin-left: -55vw; /* Aplicar margen negativo para mantener el centro del contenido */
+    width: calc(30% + 55vw);
+    /* Incrementar el ancho original */
+    margin-left: -55vw;
+    /* Aplicar margen negativo para mantener el centro del contenido */
     z-index: 11;
 }
 
 .slide-3:hover {
-    width: calc(30% + 70vw); /* Incrementar el ancho original */
-    margin-left: -70vw; /* Aplicar margen negativo para mantener el centro del contenido */
+    width: calc(30% + 70vw);
+    /* Incrementar el ancho original */
+    margin-left: -70vw;
+    /* Aplicar margen negativo para mantener el centro del contenido */
     z-index: 12;
 }
 
@@ -294,8 +319,110 @@ a {
     left: 86%;
 }
 
+/* --- Quinta seccion --- */
+#Quinta-seccion {
+    height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+}
 
+#Quinta-seccion h2 {
+    font-weight: 800;
+}
 
+.green {
+    color: var(--green);
+}
+
+#Quinta-seccion>.row>.col-5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* Cambio a dirección de columna */
+    align-items: flex-start;
+}
+
+.spark-quinta-seccion {
+    position: absolute;
+    top: -2rem;
+    left: 36rem;
+}
+
+.bottom-line {
+    border-bottom: 5px solid var(--black);
+}
+
+.contenedor-cartas {
+    padding-top: 7.5rem !important;
+}
+
+.contenedor-cartas .justify-content-center {
+    gap: 15%;
+}
+
+.elemento {
+    width: 550px;
+    aspect-ratio: 14 / 16;
+    border-radius: 18px;
+    background-size: cover;
+    position: relative;
+    filter: grayscale(80%) contrast(1);
+    transition: filter 0.3s;
+}
+
+.tarjeta-1 {
+    background-image: url('https://www.hollywoodreporter.com/wp-content/uploads/2017/06/1343232_mkt-pm_got_s7_jon_po_-_embed_2017.jpg');
+}
+
+.tarjeta-2 {
+    background-image: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2017%2F06%2Funknown-4-2000.jpg');
+}
+
+.elemento:hover {
+    filter: none;
+}
+
+.contenido {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    background-color: transparent;
+    transition: background-color 0.3s, opacity 0.3s;
+    cursor: default;
+}
+
+.elemento:hover .contenido {
+    background-color: var(--yellow);
+    opacity: 0.85;
+}
+
+.contenido p {
+    max-width: 350px;
+    color: var(--black);
+    text-align: center;
+    opacity: 0;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.contenido h4 {
+    font-weight: 800;
+    position: absolute;
+    bottom: 5%;
+    color: var(--yellow);
+    transition: color 0.3s ease;
+}
+
+.elemento:hover .contenido p {
+    opacity: 1;
+}
+
+.elemento:hover .contenido h4 {
+    color: var(--black)
+}
 
 
 
