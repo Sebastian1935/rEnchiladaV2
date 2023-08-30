@@ -459,6 +459,7 @@ a {
 #Septima-seccion {
     height: 60vh;
     padding: 0 8%;
+    position: relative;
 }
 
 #Septima-seccion h4 {
@@ -477,6 +478,29 @@ a {
     color: var(--orange);
 }
 
+.confettiRBY {
+    position: absolute;
+    left: 79%;
+    top: 10%;
+}
+
+/* --- Octava seccion --- */
+#Octava-seccion {
+    height: 70vh;
+    position: relative;
+}
+
+#Octava-seccion h2{
+    font-weight: 800;
+}
+
+#Octava-seccion p {
+    font-size: 2rem;
+}
+
+.tacos {
+    width: 300px;
+}
 
 
 
