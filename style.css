@@ -104,7 +104,7 @@ a {
     max-width: 109px !important;
     position: absolute;
     top: 25%;
-    left: 2%;
+    left: 2.5%;
 }
 
 /* Confetti Green Yellow Orange */
@@ -204,9 +204,8 @@ a {
 
 #Segunda-seccion .col-1 img {
     position: absolute;
-    left: 36%;
+    left: 37%;
     top: 143vh;
-    filter: hue-rotate(208deg);
 }
 
 /* --- Tercera Seccion --- */
@@ -271,6 +270,7 @@ a {
 
 .slide:hover .slide-text {
     display: block;
+    opacity: 0.8;
 }
 
 .slide-1:hover {
